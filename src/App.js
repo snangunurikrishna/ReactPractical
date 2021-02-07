@@ -1,8 +1,14 @@
-import logo from "./logo.svg";
-import "./App.css";
-
+import React from "react";
+import { Container, Segment } from "semantic-ui-react";
+import Part1 from "../src/Part1/Part1.js";
 function App() {
-  return <h1 className="App">Tutorial for Heroku deploy</h1>;
+  return (
+    <Container>
+      <Segment>
+        <Part1></Part1>
+      </Segment>
+    </Container>
+  );
 }
 
 export default App;
