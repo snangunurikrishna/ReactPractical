@@ -1,14 +1,8 @@
+import React from "react";
 const ReactChild = (props) => {
   return (
     <>
-      <div>{props.childData}</div>
-      <button
-        onClick={() => {
-          props.parentMethod("Iam coming from child and displayed in parent");
-        }}
-      >
-        Child button
-      </button>
+      <input value={props.data} ref={props.inputRef} />
     </>
   );
 };
